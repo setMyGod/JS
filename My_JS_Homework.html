@@ -9,6 +9,7 @@
 
 
 <script>
+    // 1.Cоздать переменные
     let a = 'hello'
     let b = 'owu'
     let c = "com"
@@ -21,22 +22,75 @@
     let num6 = 16
     let bool1 = true
     let bool2 = false
-    document.write(num1)
-    alert(num4)
-    console.log(bool1)
-    console.log(bool2)
-    document.write(num5)
-    let firstNAme ="Ivan"
-    let middleNAme = "Sergeevich"
-    let lastName = "Hrytsyna"
-    let person = firstNAme+middleNAme+lastName;
-    prompt('Приветствую',firstNAme);
-    prompt("Фамилия", lastName);
-    prompt("Тебе лет:",32)
-    let f = 100;let j = "100";let z = true;
-    console.log(typeof f);
-    console.log(typeof j);
+
+    // 2.Вывести переменные с помощью console.log, alert, document.whrite
+    document.write(a, b, c ,d,num1, num2, num3, num4, num5,num6, bool1, bool2)
+    console.log(a, b, c ,d,num1, num2, num3, num4, num5,num6, bool1, bool2)
+    alert(a); alert(b);
+    alert(c);
+    alert(d)
+    alert(num1);
+    alert(num2);
+    alert(num3);
+    alert(num4);
+    alert(num5);
+    alert(num6);
+    alert(bool1);
+    alert(bool2);
+
+    //3.Переприсвоить каждой переменной с задания, значение на свободное.
+     a = 'hello world';
+     b = 'hello my friend';
+     c = "hello mentor";
+     d = "ready to work?";
+     num1 = 100;
+     num2 = 900;
+     num3 = 123.92;
+     num4 = 77.7;
+     num5 = 6666;
+     num6 = 123123;
+     bool1 = false;
+     bool2 = true;
+
+     // 4.Вивести кожну змінну за допомогою: console.log , alert, document.write
+    document.write(a, b, c, d, num1, num2, num3, num4, num5, num6, bool1, bool2);
+    console.log(a, b, c, d, num1, num2, num3, num4, num5, num6, bool1, bool2);
+    alert(a); alert(b);
+    alert(c);
+    alert(d);
+    alert(num1);
+    alert(num2);
+    alert(num3);
+    alert(num4);
+    alert(num5);
+    alert(num6);
+    alert(bool1);
+    alert(bool2);
+
+    // 5.Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+    firstNAme = "Ivan"
+    middleNAme = "Hrytsyna"
+    lastName = "Sergeevich"
+    person = firstNAme, middleNAme, lastName
+
+    // 6.За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    prompt(firstNAme);
+    prompt(lastName);
+    prompt("32 роки");
+
+    //7. Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    prompt("Вітаю", firstNAme + lastName);
+    prompt("Тобі вік:", "32 роки");
+
+    //8-9.За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    let z = 100;
+    let j = '100';
+    let h = true;
     console.log(typeof z);
+    console.log(typeof j);
+    console.log(typeof h);
+
+    //10-11. Визначити відповідний оператор в виразах що б вийшов відповідний результат.
     console.log(5<=6);
     console.log(5>=6);
     console.log(5==6);
@@ -48,12 +102,20 @@
     console.log(10<10);
     console.log(123 === '123');
     console.log(123 == "123");
-    // let str = "20";
-    // let h = 5;
-    // document.write(str + h + "<br/>");
-    // document.write(str - h + "<br/>");
-    // document.write(str * "2" + "<br/>");
-    // document.write(str / 2 + "<br/>");
+
+    // 24. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    let str = "20";
+    let х = 5;
+    document.write(str + х + "<br/>");
+    document.write(str - х + "<br/>");
+    document.write(str * "2" + "<br/>");
+    document.write(str / 2 + "<br/>");
+    // Знак + соединяет переменную str и a преобразуя их в строковое значение, это метод
+    //Знак вычитания преобразует строковое значение в числовое
+    //Умножение и деление так же преобразуют строковое значение в цифровое
+
+
+
 
 
 
