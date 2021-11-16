@@ -59,6 +59,35 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
-for (i = 0; i <simpsons.length; i++){
-    document.write(`<div><h2></h2><h3>}</h3><p></p></div>`)
+for (let sims of simpsons){
+    document.write(`<div class="simpsons"><h2 class="simpsons_text">${sims.name} ${sims.surname}</h2><h3>Age:${sims.age}</h3><p>${sims.info}</p><img src="${sims.photo}" alt=""></div>`)
+}
+
+// Використовуючи данні з масиву, за допомоги document.write та циклу
+// побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
+// Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
+let products = [
+    {
+        title: 'milk',
+        price: 22,
+        image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
+    },
+    {
+        title: 'juice',
+        price: 27,
+        image: 'https://images-na.ssl-images-amazon.com/images/I/61jL2GCuKLL._SX679_PIbundle-24,TopRight,0,0_AA679SH20_.jpg'
+    },
+    {
+        title: 'tomato',
+        price: 47,
+        image: 'https://dictionary.cambridge.org/ru/images/thumb/tomato_noun_001_17860.jpg?version=5.0.74'
+    },
+    {
+        title: 'tea',
+        price: 15,
+        image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
+    },
+];
+for (prod of products){
+    document.write(`<div class="card_prod"><h3 class="prod_title">${prod.title}</h3><p class="text_about">Price:${prod.price}$</p> <img src="${prod.image}" alt="prod_i"/></div>`)
 }
