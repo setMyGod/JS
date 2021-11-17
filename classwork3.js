@@ -61,3 +61,45 @@ for (i = n.length - 1; i >= 0; i--) {
     document.write(`<div>${n[i]}</div>`)
 }
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+for ( i = n.length - 1; i>=0; i--){
+    console.log(n[i]);
+}
+
+
+i = n.length-1;
+while (i >=0) {
+    if (i % 2 !== 0) {
+    console.log(n[i]);
+
+    }
+    i--;
+}
+
+for( let i = n.length -1; i >=0; i--){
+    if( i % 2 !== 0 ){
+        document.write(`<div> ${i}</div>`)
+    }
+}
+
+i = n.length-1;
+while (i >= 0){
+    if (n[i] % 2 === 0) {
+
+        console.log(n[i]);
+    }
+    i--;
+}
+
+
+for ( i = n.length-1 ; i >= 0; i--){
+    if (n[i] % 2 === 0) {
+        console.log(n[i]);
+    }
+}
+
+for (i = n.length - 1; i >= 0; i--){
+    if(n[i] % 3 === 0){
+        n[i] = "hello octen";
+        console.log(n[i]);
+    }
+}
