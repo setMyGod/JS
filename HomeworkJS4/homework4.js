@@ -82,13 +82,14 @@ spisok(["JS",true,14,"develorep",88]);
 
 //9.створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
+let obj = [{id:1, name:"Vasya", age:22}, {id:2, name:"Nastya", age:21}, {id:3, name:"Petya", age: 33}];
 function massive1 (obj) {
-    for (let i of obj) {
 
-        document.write(`<div>${obj["id"]}</div><div>${obj["id"]}</div><div>${obj["id"]}</div>`)
+    for (i = 0; i<obj.length; i++) {
+        document.write(`<div>${obj[i].id}. ${obj[i].name} - ${obj[i].age}</div>`)
+
 
     }
 }
-massive1([{id:1, name:"Vasya", age:22}]);
-
+massive1(obj);
 
