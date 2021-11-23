@@ -64,8 +64,8 @@ function sumnum (argument){
     return sum;
 }
 document.write(sumnum(summa))
-// - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-abc = [4,5,8,9]
+//6 - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+abc = [4,5,8,9,7396]
 function midle ( arg ){
     let sum = 0;
     for (i of arg) {
@@ -76,3 +76,45 @@ function midle ( arg ){
 
 console.log(midle(abc));
 
+
+//7.створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
+function minMax(arg) {
+    let min = arguments[0];
+    let max = arguments[0];
+    for (const element of arguments) {
+        if (element > max) {
+            max = element;
+        }
+        if (element < min) {
+            min = element;
+        }
+    }
+    console.log("max ", max);
+    return min;
+}
+document.write('Мінімальне число з введених: ' + minMax(100, 20, 3, 100, 2021))
+
+// 8. створити функцію яка заповнює масив рандомними числами
+
+let z = [];
+function random(arg){
+    for (i = 0; i < arg; i++) {
+        z.push(Math.floor(Math.random()*100));
+    }
+    return z;
+}
+document.write(random(12))
+
+// 9.Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1]
+
+let arr = [];
+function reverse(arr) {
+
+    for (let i = arr.length - 1, ri = 0; i >= 0; i--, ri++) {
+        arr[ri] = arr[i];
+    }
+
+    return arr;
+
+}
+reverse([1,2,3]);
