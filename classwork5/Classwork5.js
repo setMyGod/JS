@@ -60,11 +60,11 @@ min(777,888,444)
     let newarr = 0;
        for (i of arr) {
            newarr += i;
-           console.log(newarr)
-
        }
+       return newarr;
+
    }
-   summa([5,6,2])
+  console.log(summa([5,6,2]))
 
     // створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
