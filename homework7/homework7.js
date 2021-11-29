@@ -51,16 +51,16 @@ class Client{
 
 // створити пустий масив, наповнити його 10 об'єктами Client
 let newarr = [
-    new Client(92, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`,`notebook`,`personal computer`,'ball','pencil']),
-    new Client(21, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`,`notebook`,`personal computer`,'clock']),
-    new Client(34, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`]),
-    new Client(421, 'Danila', 'Bagrov', 'insd@dasd.ru', [`book`,`notebook`]),
-    new Client(5, 'Danila', 'Bagrov', 'insd@dasd.ru', [`videogames`]),
-    new Client(612, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`,`notebook`]),
-    new Client(7412, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`,`notebook`]),
-    new Client(832, 'Danila', 'Bagrov', 'insd@dasd.ru', [`notebook`,`personal computer`]),
-    new Client(91, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`]),
-    new Client(10, 'Danila', 'Bagrov', 'insd@dasd.ru', [`telephone`,`notebook`]),
+    new Client(92, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`,`notebook`,`personal computer`,'ball','pencil']),
+    new Client(21, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`,`notebook`,`personal computer`,'clock']),
+    new Client(34, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`]),
+    new Client(421, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`book`,`notebook`]),
+    new Client(5, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`videogames`]),
+    new Client(612, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`,`notebook`]),
+    new Client(7412, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`,`notebook`]),
+    new Client(832, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`notebook`,`personal computer`]),
+    new Client(91, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`]),
+    new Client(10, 'Danila', 'Bagrov', 'insd@dasd.ru', 380988681488,[`telephone`,`notebook`]),
 ]
 console.log(newarr);
 
