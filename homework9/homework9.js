@@ -1,4 +1,3 @@
-
 //
 // Все робити за допомоги js.
 // - створити блок,
@@ -23,7 +22,7 @@ for (i of coll){
 }
 let alph = document.getElementsByClassName('alpha')
 for (i of alph){
-    i.style.fontSize = '100px'
+    i.style.fontSize = '88px'
 }
 document.body.appendChild(div)
 
@@ -56,13 +55,6 @@ for(i of items){
 
 // - Є масив
 // let coursesAndDurationArray = [
-//     {title: 'JavaScript Complex', monthDuration: 5},
-//     {title: 'Java Complex', monthDuration: 6},
-//     {title: 'Python Complex', monthDuration: 6},
-//     {title: 'QA Complex', monthDuration: 4},
-//     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
-// ];
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
 
@@ -75,10 +67,17 @@ let coursesAndDurationArray = [
     {title: 'Frontend', monthDuration: 4}
 ];
 
-for(i of coursesAndDurationArray){
-    let block = document.createElement('div');
-    coursesAndDurationArray.title.append(div)
-    coursesAndDurationArray.style.append(div)
+for (const i of coursesAndDurationArray) {
+    let divElement = document.createElement('div');
+    let h1 = document.createElement('h1');
+    h1.innerText = i.title;
+
+    let h2 = document.createElement('h2');
+    h2.innerText = i.monthDuration;
 
 
+    divElement.appendChild(h1);
+    divElement.appendChild(h2);
+    document.body.appendChild(divElement);
 }
+
