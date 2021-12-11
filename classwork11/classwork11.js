@@ -18,19 +18,34 @@ let users = [
 
 
 
-for (i of users) {
+for (let i of users) {
     let div = document.createElement('div');
     let btn = document.createElement('button');
-    document.body.append(div,btn)
+
     btn.innerText = 'Добавить в избранное'
     div.innerText = JSON.stringify(i)
 
-   btn.addEventListener('click', function (){
-       favorites = []
-       favorites.push(i)
-       localStorage.setItem('favorites', JSON.stringify(favorites));
-
-
-   })
-
+    btn.onclick = function (){
+        let favorites = JSON.parse(localStorage.getItem('favorites'))|| [];
+        favorites.push(i)
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+    document.body.append(div,btn)
 }
+
+// for (let i of users) {
+//     let div = document.createElement('div');
+//     let btn = document.createElement('button');
+//     document.body.append(div,btn)
+//     btn.innerText = 'Добавить в избранное'
+//     div.innerText = JSON.stringify(i)
+//
+//     btn.addEventListener('click', function (){
+//         favorites = []
+//         favorites.push(i)
+//         localStorage.setItem('favorites', JSON.stringify(favorites));
+//
+//
+//     })
+//
+// }
