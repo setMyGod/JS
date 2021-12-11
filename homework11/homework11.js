@@ -3,6 +3,7 @@
 let div = document.createElement('div');
 let form = document.createElement('form');
 let inputname = document.createElement('input');
+
 let inputage = document.createElement('input');
 let button = document.createElement('button');
 form.append(inputname, inputage)
@@ -36,6 +37,8 @@ carform.style.width = '100px'
 
 
 carbutton.addEventListener('click',function (){
+
+
     localStorage.setItem('model',JSON.stringify(modelinput.value))
     localStorage.setItem('type',JSON.stringify(typeinput.value))
     localStorage.setItem('volume', JSON.stringify(volumeinput.value))
@@ -44,9 +47,9 @@ carbutton.addEventListener('click',function (){
     let mJSON = localStorage.getItem('model');
     let tJSON = localStorage.getItem('type');
     let vJSON = localStorage.getItem('volume');
-    // console.log(JSON.parse(mJSON));
-    // console.log(JSON.parse(tJSON));
-    // console.log(JSON.parse(vJSON));
+    console.log(JSON.parse(mJSON));
+    console.log(JSON.parse(tJSON));
+    console.log(JSON.parse(vJSON));
     let mass =[mJSON,tJSON,vJSON]
     localStorage.setItem('array',mass)
 
