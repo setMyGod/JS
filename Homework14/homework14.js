@@ -4,19 +4,17 @@ function wakeup (isWorkingDay = true){
         if(isWorkingDay){
             resolve('просыпаюсь')
         }
-        else {
-            reject('еще сплю')
-        }
+
         },1000)
 
     })
 }
-function goEat(eat){
+function goEat(){
     return new Promise((resolve) => {
        setTimeout(()=>{
-           if(eat){
+
                resolve('Кушаю')
-           }
+
 
        },1000)
     });
@@ -52,22 +50,22 @@ function backtoHome (){
 wakeup(true)
 .then(morning =>{
     console.log(morning);
-    return goEat("Makaroxi")
+    return goEat()
 })
 .then(eat =>{
     console.log(eat);
     return goWork()
 
 })
-.then(completeTask =>{
-    console.log(completeTask)
+.then(workingday =>{
+    console.log(workingday)
     return doneMyjob()
 })
 
-.then(done =>{
-    console.log(done);
+.then(donemywork =>{
+    console.log(donemywork);
     return backtoHome()
 })
-.then(home=>{
-    console.log(home);
+.then(homeBack=>{
+    console.log(homeBack);
 })
