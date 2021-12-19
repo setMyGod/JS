@@ -8,13 +8,58 @@
 
 
 <script>
-    fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(users => {
+
+
+ let url = new URL(location.href);
+ let userID = url.searchParams.get('id');
+ console.log(userID);
+ fetch('https://jsonplaceholder.typicode.com/users/' +userID )
+     .then(response => response.json())
+     .then(users => {
+         let divfather = document.createElement('div');
+         document.body.appendChild(divfather)
+         let a = document.createElement('a');
+         a.href = 'miniproject.html'
+         divfather.append(a)
+         let button = document.createElement('button');
+         button.innerHTML = 'Back'
+         a.append(button)
+         button.style.marginTop = '10px'
+         button.style.width = '70px'
+         let div1 = document.createElement("div");
+         let div2 = document.createElement("div");
+         let div3 = document.createElement("div");
+         let div4 = document.createElement("div");
+         let div5 = document.createElement("div");
+         divfather.append(div1,div2,div3,div4,div5)
+         div1.style.paddingTop = '10px'
+         div2.style.paddingTop = '10px'
+         div3.style.paddingTop = '10px'
+         div4.style.paddingTop = '10px'
+         div5.style.paddingTop = '10px'
+         div1.innerText  =`Id: ${users.id}`
+         div2.innerText  = `Name: ${users.name}`
+         div3.innerText  = `Username: ${users.username}`
+         div4.innerText  = `Email: ${users.email}`
+         div5.innerHTML = `Adress: ${JSON.stringify(users.address)}`
+         let geo = document.createElement('div');
+         geo.innerHTML = `Geo: ${JSON.stringify(users.address.geo)}`
+         div5.append(geo)
+         geo.style.paddingTop = '10px'
+         document.body.style.background = 'silver'
 
 
 
-        })
+
+
+
+
+
+
+
+
+     })
+
 </script>
 </body>
 </html>

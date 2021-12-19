@@ -39,7 +39,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let a = document.createElement('a');
             div.append(a)
             a.append(button)
-            a.href = 'post-details.html'
+            a.href = 'post-details.html?id='+i.id;
             button.innerHTML = `Favorite user`
 
             button.onclick = function (e){
