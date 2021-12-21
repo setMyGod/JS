@@ -1,0 +1,161 @@
+body {
+    font-family: Poppins;
+}
+.navbar {
+    width: 1350px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    padding-left: 142px;
+    padding-top: 27px;
+}
+
+.product {
+    margin-top: 30px;
+
+}
+
+
+.signin {
+    height: 43px;
+    width: 102px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px;
+    margin-top: 19px;
+
+
+}
+.signup {
+    height: 43px;
+    width: 110px;
+    border-radius: 4px;
+    background: #02897A;
+    box-sizing: border-box;
+    border: 2px;
+    margin-top: 19px;
+
+}
+.signupspan {
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+
+}
+
+.signinspan {
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+}
+
+
+.menu {
+    display: flex;
+  justify-content: space-between;
+    margin-top: 30px;
+    column-gap: 60px;
+
+}
+
+.rightimg {
+    padding-top: 22px;
+    padding-right: 153px;
+}
+
+span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #22343D;
+}
+h1{
+    height: 120px;
+    width: 518px;
+    left: 159px;
+    top: 225px;
+}
+.text_content {
+    height: 95px;
+    width: 458px;
+    left: 159px;
+    top: 363px;
+
+}
+
+.content {
+    display: flex;
+
+}
+
+
+.getstart{
+    height: 53px;
+    width: 175px;
+    left: 0px;
+    top: 0px;
+    border: 2px;
+    border-radius: 4px;
+    background: #02897A;
+
+}
+.get_started_span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.textabout {
+    padding-left: 159px;
+    padding-top: 225px;
+    column-gap: 18px;
+
+}
+.bigimg {
+    padding-top: 43px;
+
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: #22343D;
+    height: 120px;
+    width: 518px;
+    left: 159px;
+    top: 225px;
+}
+.sometext {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #22343D;
+    width: 458px;
+    height: 95px;
+    left: 159px;
+    top: 363px;
+
+}
+
+.playbutton{
+    padding-left: 30px;
+}
+.watch_video{
+    padding-left: 10px;
+
+}

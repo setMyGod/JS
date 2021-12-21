@@ -32,6 +32,8 @@
          let div4 = document.createElement("div");
          let div5 = document.createElement("div");
          divfather.append(div1,div2,div3,div4,div5)
+         divfather.style.paddingLeft = '10px'
+         divfather.style.paddingLeft = '10px'
          div1.style.paddingTop = '10px'
          div2.style.paddingTop = '10px'
          div3.style.paddingTop = '10px'
@@ -47,18 +49,16 @@
          div5.append(geo)
          geo.style.paddingTop = '10px'
          document.body.style.background = 'silver'
+         let aforPost = document.createElement('a');
+         divfather.append(aforPost)
+         aforPost.href = 'postofUser.html?='+users.id
+         let aboutuserbtn = document.createElement('button');
+         aboutuserbtn.innerHTML = 'post of current user'
+         aboutuserbtn.style.marginTop = '30px'
+         aforPost.append(aboutuserbtn)
 
 
-
-
-
-
-
-
-
-
-
-     })
+     });
 
 </script>
 </body>
